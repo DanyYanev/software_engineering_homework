@@ -1,0 +1,1904 @@
+Started GET "/" for 127.0.0.1 at 2017-10-05 12:21:28 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/dany/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/dany/.rvm/gems/ruby-2.4.1/gems/railties-5.1.4/lib/rails/templates/rails/welcome/index.html.erb (7.3ms)
+Completed 200 OK in 417ms (Views: 38.7ms)
+
+
+  [1m[35m (186.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3805855532659626495)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-10-05 19:46:53.943302"], ["updated_at", "2017-10-05 19:46:53.943302"]]
+  [1m[35m (90.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3805855532659626495)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/sums" for 127.0.0.1 at 2017-10-06 04:23:24 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sums"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sums" for 127.0.0.1 at 2017-10-06 04:25:40 -0700
+  
+NameError (undefined local variable or method `index' for #<ActionDispatch::Routing::Mapper:0xb8e7eec>):
+  
+config/routes.rb:3:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/sums" for 127.0.0.1 at 2017-10-06 04:25:49 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 3603ms (Views: 2473.6ms)
+
+
+Started GET "/sums" for 127.0.0.1 at 2017-10-06 04:26:40 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sums"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:26:43 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 55ms (Views: 51.5ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:32:20 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/config/routes.rb:3: syntax error, unexpected tINTEGER, expecting keyword_end
+' => "sums1#index" //url/sums1 calls sums1 controller with i
+                              ^):
+  
+config/routes.rb:3: syntax error, unexpected tINTEGER, expecting keyword_end
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:33:11 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sums1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:33:29 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 32ms (Views: 28.3ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:36:27 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 52.2ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:41:08 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 32.9ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:43:05 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 49ms (Views: 47.2ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:45:41 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 92ms (Views: 89.4ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:49:20 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 62ms (Views: 58.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:49:39 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/sums1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:50:02 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J/TzjJ6j+3mJKYEVcxh22SoFDMLbZGaGhAnwtX+7fJ8LLNI1kHjX77KO5Jq+Migj4uB20FN3VESdm6HvsrRMJg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2685ae4 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-fn6v31.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 26ms
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:50:06 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J/TzjJ6j+3mJKYEVcxh22SoFDMLbZGaGhAnwtX+7fJ8LLNI1kHjX77KO5Jq+Migj4uB20FN3VESdm6HvsrRMJg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb267c070 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-efgkbn.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 21ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:50:15 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 30.3ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:50:17 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1PI3YkDWdUii0SkRZedWRidUCrY2gfgvEbHNFL9x+Wf4KhbbTg1Z3pl2TJ6ozQi877FwpL6Syu0II5xOcn7J3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2664984 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-gw84qm.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 19ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:50:36 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 70ms (Views: 62.9ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:50:37 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tXaEXzlrj2Qvq6ZlBbUhDfG+TTg8HxULR2+nAl5k5euZrqXmN7Cj8hQMw+rIn3/3OVs3KrQMJ8le/fZYk2vVUg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xba64b1c @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-a6d02s.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 29ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:50:50 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 96ms (Views: 94.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:50:51 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1w0N19p/3wu2EwvRvmAgVIdZWFDDxZIm/1Atknjgm6v71Sxu1KTznY20bl5zSn6uT7wiQkvWoOTmwnzIte+rEg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb44440a8 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-axtwo0.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 54ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 04:51:06 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 35ms (Views: 33.0ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 04:51:08 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GsHS3eeFHBtELMgo3Jf/j6ya4cz4OVicPHM01Ea7AIM2GfNk6V4wjX+LracRvaF1ZH+b3nAqal4l4WWOi7QwOg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb32f11ac @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-1tkadnf.png>, @original_filename="Mabel's_Sweater_Creator_random_gnome.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"Mabel's_Sweater_Creator_random_gnome.png\"\r\nContent-Type: image/png\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 35ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:05:37 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.3ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:05:41 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zBTqM9ME69ATWjO0p9sr1crG4qjqcUvEWcyeYgqVgbTgzMuK3d/HRij9Vjtq8XUvAiOYumJieQZAXs84x5qxDQ==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb3cdcef0 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-1ammowa.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 1ms
+
+
+  
+TypeError (no implicit conversion of ActionDispatch::Http::UploadedFile into String):
+  
+app/controllers/sums1_controller.rb:11:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:05:55 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zBTqM9ME69ATWjO0p9sr1crG4qjqcUvEWcyeYgqVgbTgzMuK3d/HRij9Vjtq8XUvAiOYumJieQZAXs84x5qxDQ==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb26285ec @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-zu27sk.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 33ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:06:42 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 27.1ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:06:50 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E4F++AY62LjY+8gIAaLKm4jlEoYRitKYcMmAgJToXE0/WV9BCOH0LuNcrYfMiJRhQABolJmZ4FppW9HaWeds9A==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb29091a8 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-234vns.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 23ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:08:11 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 32ms (Views: 31.0ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:08:14 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yMr1QtxFwfykHaseHxxQuxZQwTqZqfEJBUC8qni1bvfkEtT70p7tap+6zpHSNg5B3rW7KBG6w8sc0u3wtbpeTg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb445df44 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-1tqj7dn.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 31ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:08:46 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 26ms (Views: 24.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:08:50 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OwBzjihcnFCFNM2pC2i1pfcZolzLVs3MUBFwwJH/tpkX2FI3Joewxr6TqCbGQutfP/zYTkNF/w5JgyGaXPCGIA==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb3309dd8 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-jerrbj.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+TypeError (String can't be coerced into Integer):
+  
+app/controllers/sums1_controller.rb:13:in `+'
+app/controllers/sums1_controller.rb:13:in `block in create'
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:09:09 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OwBzjihcnFCFNM2pC2i1pfcZolzLVs3MUBFwwJH/tpkX2FI3Joewxr6TqCbGQutfP/zYTkNF/w5JgyGaXPCGIA==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb33c702c @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-1mw8g84.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+NoMethodError (undefined method `toi' for "integer":String
+Did you mean?  to_i
+               to):
+  
+app/controllers/sums1_controller.rb:13:in `block in create'
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:09:20 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OwBzjihcnFCFNM2pC2i1pfcZolzLVs3MUBFwwJH/tpkX2FI3Joewxr6TqCbGQutfP/zYTkNF/w5JgyGaXPCGIA==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb28cadcc @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-12afbux.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 37ms
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:09:24 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OwBzjihcnFCFNM2pC2i1pfcZolzLVs3MUBFwwJH/tpkX2FI3Joewxr6TqCbGQutfP/zYTkNF/w5JgyGaXPCGIA==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb28a5d9c @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-1aonx9n.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 39ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:09:49 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 51ms (Views: 45.0ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:09:51 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uKgTcpkJyTOdLTSrZXsx4cNtaZGZIUVBadLOkH+rMxiUcDLLl9LlpaaKUSSoUW8bC4gTgxEyd4NwQJ/KsqQDoQ==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb485c7f8 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-7tlpsp.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 30ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:11:24 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 41ms (Views: 40.2ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:11:26 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r9lOaSXVgJVyffI6arlq4eFAyc96KxdNchNMRZp6Ah+DAW/QKw6sA0nal7WnkzQbKaWz3fI4JY9rgR0fV3Uypg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb32235cc @tempfile=#<Tempfile:/tmp/RackMultipart20171006-4679-t6595r.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+No template found for Sums1Controller#create, rendering head :no_content
+Completed 204 No Content in 25ms
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-06 05:29:33 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 567ms (Views: 275.1ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-06 05:29:36 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R36+O3iXHjWEb0RUJ4AIxSG58rji/aNxVqSC8pYOcMprpp+Cdkwyo7/IIdvqqlY/6VyIqmrukbNPNtOoWwFAcw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb3105ca8 @tempfile=#<Tempfile:/tmp/RackMultipart20171006-6026-1epiwo2.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 20ms (Views: 19.0ms)
+
+
+Started GET "/sums" for 127.0.0.1 at 2017-10-09 08:28:07 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sums"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sum" for 127.0.0.1 at 2017-10-09 08:28:09 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sum"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sum1" for 127.0.0.1 at 2017-10-09 08:28:19 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sum1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/sums1" for 127.0.0.1 at 2017-10-09 08:31:18 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 614ms (Views: 395.4ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 08:58:06 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb440ace0 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-r5fj7p.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:03:33 -0700
+Processing by Sums1Controller#index as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2a8d704 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1ohhva1.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 80ms (Views: 63.3ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:04:00 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2e421d8 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-qf1jqh.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:04:27 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/sums1"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:04:48 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb57ccc10 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-9wt574.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:08:37 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb28b2f88 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1naadxh.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 27ms (Views: 19.7ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:17:18 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb28a2e44 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1rzujlo.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:22:41 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2897db4 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1nmrf31.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:23:44 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2ff87c0 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-xk0dmn.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 1.1ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:24:40 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2f4c448 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-izzloq.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:24:44 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2f41e44 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-botc78.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.0ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:24:54 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2f38754 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-hj1xit.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 18ms (Views: 8.4ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:25:06 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb3133d38 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1hmjkk.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:27:35 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb317b3cc @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-nc3cb3.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.1ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:30:30 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb316faf4 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-t7opny.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:34:27 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2e158cc @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-9xaxd6.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.9ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:36:49 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2e04414 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-848twv.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.1ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:38:40 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:12: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+    if row[2].to_f % 2 != 0 do
+                              ^
+/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/filters_controller.rb:12: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+app/controllers/filters_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:39:23 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:12: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+  if (row[2].to_f) % 2 != 0 do
+                              ^
+/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/filters_controller.rb:12: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+app/controllers/filters_controller.rb:22: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:39:50 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+          if check % 2 != 0 do
+                              ^
+/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:40:41 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+          if check != 0 do
+                          ^
+/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:41:23 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+          if check == 0 do
+                          ^
+/home/dany/SE/SE_SumHM/app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input):
+  
+app/controllers/filters_controller.rb:13: syntax error, unexpected keyword_do_block, expecting keyword_then or ';' or '\n'
+app/controllers/filters_controller.rb:23: syntax error, unexpected keyword_end, expecting end-of-input
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:43:18 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2899538 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1fq74vr.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 10ms
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 0)):
+  
+app/controllers/filters_controller.rb:16:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-09 09:44:14 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fhlBTyxoJIso1AkateM6DM+KhYFYDWTSubk+JWbq5GdSwWD2IrMIHRNzbJV4yWT2B2//k9AeVhCgK29/q+XU3g==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2cf9bc8 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1qja436.csv>, @original_filename="convertcsv(1).csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:44:43 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2c90114 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1xm0my6.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:45:24 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2c6b0f8 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-7kk6gj.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:46:24 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2c46a64 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1qj5jgr.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:46:32 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2c2ec84 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-bumcml.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.2ms)
+Completed 200 OK in 3ms (Views: 0.9ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:46:48 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb2c12e30 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1oai251.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.5ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:47:03 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb45fb004 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-1jpl1au.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 1.4ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:47:16 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb45db218 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-tj5ctc.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.8ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-09 09:47:19 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb45b76c4 @tempfile=#<Tempfile:/tmp/RackMultipart20171009-7693-jdiip1.csv>, @original_filename="convertcsv(1).csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv(1).csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 09:24:03 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QpJg0kWmsgQlC3N/CLIwQU7hDBuvJArPi57PqfWoEDcIsrOkdGGwT8w9whIu6LVXiNMQPEVgYqPCZZbao3u5gg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c669c2f8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-nt78m5.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 488ms (Views: 11.5ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:34:10 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6be0d90 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-4z7wl.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 2.8ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:34:26 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6bb1270 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-19wy1oa.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:35:24 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3758007b48 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-oiwo34.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:35:41 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6b76940 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-3w3q6x.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:35:47 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6b5edb8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1wopbpu.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 3ms (Views: 1.9ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:36:02 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6b352b0 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-qltisd.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:38:29 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c69a9310 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-lw0qu5.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 2ms (Views: 0.8ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/filters_controller.rb:21:in `create'
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:38:54 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6866cc8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-lzi6x2.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 6ms (Views: 0.8ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/filters_controller.rb:21:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 09:39:01 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QpJg0kWmsgQlC3N/CLIwQU7hDBuvJArPi57PqfWoEDcIsrOkdGGwT8w9whIu6LVXiNMQPEVgYqPCZZbao3u5gg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c5940938 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1xkk4ax.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 500 Internal Server Error in 2ms (Views: 0.4ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/filters_controller.rb:21:in `create'
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:39:35 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c684df98 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1bg9h6.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 8ms (Views: 4.8ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 09:40:55 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c67f4970 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-5q4mb8.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 09:45:00 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_ffile"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c66da760 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1xunf1a.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_ffile\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 09:45:10 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_ffile"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c67ca4b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-bvt785.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_ffile\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 09:45:32 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QpJg0kWmsgQlC3N/CLIwQU7hDBuvJArPi57PqfWoEDcIsrOkdGGwT8w9whIu6LVXiNMQPEVgYqPCZZbao3u5gg==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6865fd0 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-ca9oe2.csv>, @original_filename="convertcsv.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 09:49:01 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_ffile"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c68d24c8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-3hmnfu.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_ffile\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 09:55:29 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c6a4c448 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-3es9vs.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.1ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 09:56:18 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c69df410 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-pbqiez.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms)
+
+
+Started POST "/intervals" for 127.0.0.1 at 2017-10-10 09:56:52 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:13: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:21: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:30: syntax error, unexpected ';'
+            j++;
+                ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:38: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:13: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:21: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:30: syntax error, unexpected ';'
+app/controllers/intervals_controller.rb:38: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/intervals" for 127.0.0.1 at 2017-10-10 09:58:26 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:15: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:23: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:32: syntax error, unexpected ';'
+            j++;
+                ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:40: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:15: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:23: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:32: syntax error, unexpected ';'
+app/controllers/intervals_controller.rb:40: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 09:58:44 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:15: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:23: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:32: syntax error, unexpected ';'
+            j++;
+                ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:40: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:15: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:23: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:32: syntax error, unexpected ';'
+app/controllers/intervals_controller.rb:40: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:00:02 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:33: syntax error, unexpected ';'
+            j++;
+                ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:33: syntax error, unexpected ';'
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:01:31 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:33: syntax error, unexpected ';'
+            j++;
+                ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:33: syntax error, unexpected ';'
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:01:38 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:01:43 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:02:45 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:16: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:04:47 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:24: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 10:05:01 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:34: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:41: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:50: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 10:09:22 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c5be54b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1qefflj.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 10:09:24 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c5b38060 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-bmc6g7.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 6ms (Views: 4.1ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 10:09:28 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0055d7c5a28a58 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1jx8y1q.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 10:44:22 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 287ms (Views: 284.1ms)
+
+
+Started POST "/lin_regression" for 127.0.0.1 at 2017-10-10 11:21:24 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:13: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:23: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:13: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:23: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:21:35 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:13: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:23: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:13: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:23: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:30: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:33:51 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:38:00 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:38:08 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+    end
+       ^
+/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:21: syntax error, unexpected keyword_end
+app/controllers/lin_regression_controller.rb:28: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:38:27 -0700
+  
+LoadError (cannot load such file -- linefit):
+  
+app/controllers/lin_regression_controller.rb:2:in `<top (required)>'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:41:52 -0700
+  
+LoadError (cannot load such file -- linefit):
+  
+app/controllers/lin_regression_controller.rb:2:in `<top (required)>'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:44:05 -0700
+  
+LoadError (cannot load such file -- linefit):
+  
+app/controllers/lin_regression_controller.rb:2:in `<top (required)>'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:44:08 -0700
+  
+LoadError (cannot load such file -- linefit):
+  
+app/controllers/lin_regression_controller.rb:2:in `<top (required)>'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 11:53:53 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:04:50 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:13:55 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+          end
+             ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+        end
+           ^
+/home/dany/SE/SE_SumHM/app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/intervals_controller.rb:30: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:37: syntax error, unexpected keyword_end
+app/controllers/intervals_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:14:13 -0700
+  
+LoadError (cannot load such file -- linefit):
+  
+app/controllers/lin_regression_controller.rb:2:in `<top (required)>'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:20:52 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3744274958 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1v1gge.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NameError (uninitialized constant LinRegressionController::FasterCSV):
+  
+app/controllers/lin_regression_controller.rb:11:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:24:39 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f375001a728 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1jwgx8f.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/lin_regression_controller.rb:11:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:25:36 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3748cb88e8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1ysxlwu.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/lin_regression_controller.rb:11:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:27:20 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3744276a28 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1h580ww.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 14ms
+
+
+  
+NoMethodError (undefined method `foreach_with_index' for CSV:Class):
+  
+app/controllers/lin_regression_controller.rb:16:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:29:10 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3749f65658 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-17lp3kt.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 216ms
+
+
+  
+NameError (undefined local variable or method `lineFit' for #<LinRegressionController:0x007f3749f670e8>):
+  
+app/controllers/lin_regression_controller.rb:23:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:29:41 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/r18P5otP77OfbHZNbIRzrr+hvMJocwDHGrqCG5ASKK0na9Jq+o99SdLALQT6JTYfMya1OPlpG9VkbN7OJPhFw==", "csv_file"=>#<ActionDispatch::Http::UploadedFile:0x007f3749dbf7b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-1yofet4.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 1.1ms)
+
+
+Started POST "/lin_regression" for 127.0.0.1 at 2017-10-10 12:31:13 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007f3749ef1370 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-7lmh23.csv>, @original_filename="lin_reg.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/lin_regression_controller.rb:11:in `create'
+Started POST "/lin_regression" for 127.0.0.1 at 2017-10-10 12:31:30 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x007f37447764b0 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-32434-ntriq3.csv>, @original_filename="lin_reg.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 12:57:37 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 927ms (Views: 385.2ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 12:58:02 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 67ms (Views: 60.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:58:16 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "commit"=>"submit file"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/lin_regression_controller.rb:11:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 12:58:25 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb5a79b5c @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-b6jqiy.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 2.2ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 13:12:05 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"csv_file"=>#<ActionDispatch::Http::UploadedFile:0xb5548e58 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-atnzpu.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"csv_file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/sums1_controller.rb:12:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:13:39 -0700
+Processing by LinRegressionController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb419e844 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1q7qtbp.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 8.1ms)
+
+
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 13:14:02 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb4132360 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1f0kl44.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 119ms
+
+
+  
+NoMethodError (undefined method `number_with_precision' for #<Sums1Controller:0xb4132db0>):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 13:14:10 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb396e3a4 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-11mw6v5.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 107ms
+
+
+  
+NoMethodError (undefined method `number_with_precision' for #<Sums1Controller:0xb396eee4>):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:14:30 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb5a0de48 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-7qpqjb.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 222ms
+
+
+  
+NoMethodError (undefined method `number_with_precision' for #<Sums1Controller:0xb5a0e94c>):
+  
+app/controllers/sums1_controller.rb:17:in `create'
+Started POST "/sums" for 127.0.0.1 at 2017-10-10 13:14:50 -0700
+Processing by Sums1Controller#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb5559384 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-phha4t.csv>, @original_filename="convertcsv.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"convertcsv.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 153ms (Views: 5.1ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 13:16:36 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb5a444e8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-2ynvmn.csv>, @original_filename="good_file.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 2.2ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 13:17:02 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb552dc20 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-n3o1y6.csv>, @original_filename="good_file.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:17:45 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb5a125c4 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-vilghz.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:17:51 -0700
+Processing by Sums1Controller#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a9aDRpVHkS5w4qIUSfM43SsYz14bfhzv0jDgCRAn2D9HDqL/m5y9uEtFx5uE2WYn4/21TJNtLi3LorFT3Sjohg==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb355559c @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-7anqhe.csv>, @original_filename="lin_reg.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.2ms)
+
+
+Started POST "/lin_regression" for 127.0.0.1 at 2017-10-10 13:19:30 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb36eef70 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-18tjb0v.csv>, @original_filename="lin_reg.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"lin_reg.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 13:23:12 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb367c6a0 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-eaa8wv.csv>, @original_filename="good_file.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started POST "/filters" for 127.0.0.1 at 2017-10-10 13:25:31 -0700
+Processing by FiltersController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb3612d04 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1cbx4pl.csv>, @original_filename="good_file.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.6ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 13:27:02 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 57ms (Views: 52.8ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:27:07 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS6oggOeIUC6+j6M2+6UIbyrLDQ5db7I3W9K+g4AVfVF9ok7DUUN1oFdWwMWxMrbdE5WJrFmjArE/Rugww9lTA==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3c71114 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-pb6z5s.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 10ms (Views: 6.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:42:32 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS6oggOeIUC6+j6M2+6UIbyrLDQ5db7I3W9K+g4AVfVF9ok7DUUN1oFdWwMWxMrbdE5WJrFmjArE/Rugww9lTA==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3f97c6c @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-jdpmp4.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 2.4ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:42:37 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS6oggOeIUC6+j6M2+6UIbyrLDQ5db7I3W9K+g4AVfVF9ok7DUUN1oFdWwMWxMrbdE5WJrFmjArE/Rugww9lTA==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3f3de88 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-18dgxhp.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 1ms (Views: 0.4ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:45:42 -0700
+Processing by FiltersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aS6oggOeIUC6+j6M2+6UIbyrLDQ5db7I3W9K+g4AVfVF9ok7DUUN1oFdWwMWxMrbdE5WJrFmjArE/Rugww9lTA==", "file"=>#<ActionDispatch::Http::UploadedFile:0x9f06f8c @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-9advif.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.9ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 13:50:04 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 36.9ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:50:28 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb38ac150 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-v8062a.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 8ms
+
+
+  
+NameError (uninitialized constant IntervalsController::FasterCSV):
+  
+app/controllers/intervals_controller.rb:13:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:50:44 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb55663b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-e8knzg.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 6ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/intervals_controller.rb:19:in `[]='
+app/controllers/intervals_controller.rb:19:in `block in create'
+app/controllers/intervals_controller.rb:18:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:51:16 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb038bcb4 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-x0fyzd.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/intervals_controller.rb:19:in `[]='
+app/controllers/intervals_controller.rb:19:in `block in create'
+app/controllers/intervals_controller.rb:18:in `create'
+Started POST "/__web_console/repl_sessions/20b3ef67b2b23f3b2defda6489664ff1/trace" for 127.0.0.1 at 2017-10-10 13:51:27 -0700
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:51:33 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb37b74ac @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1bl8ul8.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 13ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/intervals_controller.rb:19:in `[]='
+app/controllers/intervals_controller.rb:19:in `block in create'
+app/controllers/intervals_controller.rb:18:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:55:50 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb35b4038 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-vq75ij.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 12ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/intervals_controller.rb:18:in `[]='
+app/controllers/intervals_controller.rb:18:in `block in create'
+app/controllers/intervals_controller.rb:17:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 13:58:31 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb292d300 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-m01xme.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/intervals_controller.rb:19:in `[]='
+app/controllers/intervals_controller.rb:19:in `block in create'
+app/controllers/intervals_controller.rb:17:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:10:15 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3bc9540 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-tqc9do.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 5ms
+
+
+  
+NoMethodError (undefined method `ceil' for nil:NilClass):
+  
+app/controllers/intervals_controller.rb:39:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:10:37 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb345b5ec @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1wn4u36.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NoMethodError (undefined method `round' for nil:NilClass):
+  
+app/controllers/intervals_controller.rb:39:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:11:00 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb2c197f8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1yp2ddk.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 24ms (Views: 18.6ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:11:21 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb1a67f78 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-p1pbzz.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 1.9ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:13:09 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb1d646b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-mkwvyu.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+Completed 500 Internal Server Error in 16ms
+
+
+  
+TypeError (nil can't be coerced into Float):
+  
+app/controllers/intervals_controller.rb:28:in `+'
+app/controllers/intervals_controller.rb:28:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:15:22 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3aa23ec @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-gdui85.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.1ms)
+Completed 200 OK in 48ms (Views: 5.2ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:23:44 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3ccf890 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1e8pgyl.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 9ms (Views: 0.6ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:23:47 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bc5Hl6MWArn/5OzPVZteDqeNtpmhS4G3Vd5zy3f8KR5BFmYurc0uL8RDiUCYsQD0b2jMiylYs3VMTCKRuvMZpw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb3c44038 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-13682-1bfe28y.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:23:56 -0700
+Processing by IntervalsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 11ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/intervals_controller.rb:13:in `create'
+Started GET "/sums1" for 127.0.0.1 at 2017-10-10 14:25:04 -0700
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:25:04 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 85ms (Views: 83.3ms)
+
+
+Processing by IntervalsController#create as HTML
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 7ms
+
+
+  
+NoMethodError (undefined method `path' for nil:NilClass):
+  
+app/controllers/intervals_controller.rb:13:in `create'
+Started POST "/sums1" for 127.0.0.1 at 2017-10-10 14:25:57 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsMbH9AT47egvsuMRMFbWiiKfPW9xZmoPhD76ZAsVhaGGzqm3sjPIZsZrgOJ6wWg4G8G5zXWq2ongqqzXSNmrw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb55d2220 @tempfile=#<Tempfile:/tmp/RackMultipart20171010-15939-1tqqpn0.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 768ms (Views: 29.8ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 12:59:25 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb371bd4 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-yq1r4n.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 604ms (Views: 33.3ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:01:10 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:01:13 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/sums1" for 127.0.0.1 at 2017-10-17 13:01:25 -0700
+Processing by IntervalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qsMbH9AT47egvsuMRMFbWiiKfPW9xZmoPhD76ZAsVhaGGzqm3sjPIZsZrgOJ6wWg4G8G5zXWq2ongqqzXSNmrw==", "file"=>#<ActionDispatch::Http::UploadedFile:0xb54cdaa0 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-4uqiy0.csv>, @original_filename="good_file.csv", @content_type="text/csv", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"good_file.csv\"\r\nContent-Type: text/csv\r\n">, "commit"=>"submit file"}
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 107ms (Views: 3.1ms)
+
+
+Started GET "/sums1" for 127.0.0.1 at 2017-10-17 13:01:28 -0700
+Processing by Sums1Controller#index as HTML
+  Rendering sums1/index.html.erb within layouts/application
+  Rendered sums1/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 483ms (Views: 471.7ms)
+
+
+Started POST "/sums1" for 127.0.0.1 at 2017-10-17 13:02:35 -0700
+  
+SyntaxError (/home/dany/SE/SE_SumHM/app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/lin_regression_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:04:20 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xc9b0940 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-x6wy42.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 0.8ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:08:11 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb44486a8 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-3506s6.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 4ms (Views: 1.0ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:08:26 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xc9d1780 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-1wugk8y.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.5ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:08:30 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb356c58 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-ps5lxx.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:10:19 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xb3a44a08 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-agofd7.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 3ms (Views: 0.7ms)
+
+
+Started POST "/lin_regressions" for 127.0.0.1 at 2017-10-17 13:10:57 -0700
+Processing by LinRegressionController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0xca3b914 @tempfile=#<Tempfile:/tmp/RackMultipart20171017-19861-1jyd8b2.csv>, @original_filename="A_08_Daniel_Yanev.csv", @content_type="application/octet-stream", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"A_08_Daniel_Yanev.csv\"\r\nContent-Type: application/octet-stream\r\n">}
+Can't verify CSRF token authenticity.
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 6ms (Views: 1.1ms)
+
+

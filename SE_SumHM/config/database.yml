@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  #encoding: utf8
+  database: sumshw_development
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: admin
+  password: admin
+
+test:
+  adapter: postgresql
+  #encoding: utf8
+  database: sumshw_test
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: admin
+  password: admin
+
+production:
+  adapter: postgresql
+  #encoding: utf8
+  database: sumshw_production
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: admin
+  password: admin

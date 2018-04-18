@@ -1,0 +1,20 @@
+= Change Log
+
+Below is a complete listing of changes for each revision of LineFit.
+
+== 0.1.0
+
+* Initial public release.
+
+== 0.2.0
+
+* Fixed bug in setWeights method.
+
+== 0.3.0
+
+* Fixed version dates
+* Uploaded linefit to github
+
+== 0.3.1
+
+* Fixed load error

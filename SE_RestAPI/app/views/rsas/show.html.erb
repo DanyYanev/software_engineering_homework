@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<% @rsa = Rsa.where(:mid => params[:id]).first%>
+
+<p>
+  <strong>Message:</strong>
+  <%= @rsa.message %>
+</p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @rsa.mid %>
+</p>
+
+<p>
+  <strong>Enc message:</strong>
+  <%= @rsa.enc_message %>
+</p>
+
+<p>
+  <strong>N:</strong>
+  <%= @rsa.n %>
+</p>
+
+<p>
+  <strong>E:</strong>
+  <%= @rsa.e %>
+</p>
+
+<p>
+  <strong>D:</strong>
+  <%= @rsa.d %>
+</p>
+
+<%= link_to 'Edit', edit_rsa_path(@rsa) %> |
+<%= link_to 'Back', rsas_path %>

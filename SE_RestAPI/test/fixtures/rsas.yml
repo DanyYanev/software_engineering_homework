@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  message: MyString
+  enc_message: MyString
+  'n': 1
+  e: 1
+  d: 1
+
+two:
+  id: 1
+  message: MyString
+  enc_message: MyString
+  'n': 1
+  e: 1
+  d: 1

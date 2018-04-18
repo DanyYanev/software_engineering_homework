@@ -1,0 +1,29 @@
+development:
+  adapter: postgresql
+  #encoding: utf8
+  database: privnote_development
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: se_privnotehw
+  password: admin
+
+test:
+  adapter: postgresql
+  #encoding: utf8
+  database: privnote_test
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: se_privnotehw
+  password: admin
+
+production:
+  adapter: postgresql
+  #encoding: utf8
+  database: privnote_production
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: se_privnotehw
+  password: admin
